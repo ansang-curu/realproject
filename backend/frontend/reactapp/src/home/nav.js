@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SignUp from "../sign/signUp.js";
+import SignUp from "./../sign/signUp.js";
 import Board from "../board/board";
 import Chat from "../chat/chat";
 import WakeUp from "./wakeUp";
