@@ -1,0 +1,72 @@
+/* Board.css */
+.board-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.board-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.posts {
+  margin-bottom: 30px;
+}
+
+.post {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  font-size: 1.5em;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.post-title:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.post-author,
+.post-date {
+  margin-right: 15px;
+}
+
+.post-content {
+  font-size: 1em;
+  color: #333;
+}
+
+.new-post-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.new-post-btn:hover {
+  background-color: #0056b3;
+}

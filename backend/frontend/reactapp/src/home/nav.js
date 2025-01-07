@@ -1,4 +1,8 @@
 import { useState } from "react";
+import SignUp from "../sign/signUp";
+import Board from "../board/board";
+import Chat from "../chat/chat";
+import WakeUp from "./wakeUp";
 
 function Home() {
   // 상태 관리: 현재 활성화된 탭
@@ -52,6 +56,19 @@ function Home() {
             Contact
           </button>
         </li>
+        <li className="nav-item" role="presentation">
+          <button
+            className={`nav-link ${activeTab === "wake" ? "active" : ""}`}
+            id="wake-tab"
+            type="button"
+            onClick={() => handleTabClick("wake")}
+            role="tab"
+            aria-controls="wake"
+            aria-selected={activeTab === "wake"}
+          >
+            Wake
+          </button>
+        </li>
       </ul>
 
       {/* 탭 콘텐츠 */}
@@ -64,7 +81,7 @@ function Home() {
           role="tabpanel"
           aria-labelledby="home-tab"
         >
-          Home Content
+          <Board></Board>
         </div>
         <div
           className={`tab-pane fade ${
@@ -74,7 +91,7 @@ function Home() {
           role="tabpanel"
           aria-labelledby="profile-tab"
         >
-          Profile Content
+          <SignUp></SignUp>
         </div>
         <div
           className={`tab-pane fade ${
@@ -84,7 +101,17 @@ function Home() {
           role="tabpanel"
           aria-labelledby="contact-tab"
         >
-          Contact Content
+          <Chat></Chat>
+        </div>
+        <div
+          className={`tab-pane fade ${
+            activeTab === "wake" ? "show active" : ""
+          }`}
+          id="wake"
+          role="tabpanel"
+          aria-labelledby="wake-tab"
+        >
+          <WakeUp></WakeUp>
         </div>
       </div>
     </div>
