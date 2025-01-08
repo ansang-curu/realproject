@@ -3,8 +3,7 @@ import { useState } from "react";
 import Board from "../board/board";
 import Chat from "../chat/chat";
 import WakeUp from "./wakeUp";
-
-// import SignUp from "../sign/signUp";
+import SignUp1 from "../sign/signUp1";
 
 function Home() {
   // 상태 관리: 현재 활성화된 탭
@@ -93,6 +92,7 @@ function Home() {
           role="tabpanel"
           aria-labelledby="profile-tab"
         >
+          <SignUp1></SignUp1>
           {/* <SignUp></SignUp> */}
         </div>
         <div
