@@ -4,7 +4,7 @@ import Board from "../board/board";
 import Chat from "../chat/chat";
 import WakeUp from "./wakeUp";
 
-import SignUp from "../sign/signUp";
+// import SignUp from "../sign/signUp";
 
 function Home() {
   // 상태 관리: 현재 활성화된 탭
@@ -93,7 +93,7 @@ function Home() {
           role="tabpanel"
           aria-labelledby="profile-tab"
         >
-          <SignUp></SignUp>
+          {/* <SignUp></SignUp> */}
         </div>
         <div
           className={`tab-pane fade ${
