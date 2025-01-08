@@ -4,7 +4,7 @@ import Board from "../board/board";
 import Chat from "../chat/chat";
 import WakeUp from "./wakeUp";
 
-import SignUp from "../sign/signUp.js";
+import SignUp from "../sign/signUp";
 
 function Home() {
   // 상태 관리: 현재 활성화된 탭
